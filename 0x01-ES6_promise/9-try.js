@@ -1,4 +1,4 @@
-import divideFunction from './8-try';
+import divideFunction from './8-try.js';
 
 export default function guardrail(mathFunction) {
   const arr = [];
@@ -12,4 +12,4 @@ export default function guardrail(mathFunction) {
   }
   return arr;
 }
-console.log(guardrail(() => divideFunction(10, 0)));
+console.log(guardrail(() => divideFunction(10, 2)));
