@@ -1,5 +1,3 @@
-import divideFunction from './8-try.js';
-
 export default function guardrail(mathFunction) {
   const queue = [];
   try {
@@ -12,4 +10,3 @@ export default function guardrail(mathFunction) {
   }
   return queue;
 }
-console.log(guardrail(() => {return divideFunction(10, 1)}));
