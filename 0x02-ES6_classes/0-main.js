@@ -1,3 +1,4 @@
-import classroom from './0-classroom.js'
-const hi = new classroom(10);
-console.log(hi._maxStudentsSize);
+import Currency from "./3-currency.js";
+
+const dollar = new Currency('$', 'Dollars');
+console.log(dollar.displayFullCurrency());
