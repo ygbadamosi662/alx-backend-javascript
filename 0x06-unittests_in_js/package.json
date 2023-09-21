@@ -1,0 +1,18 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "Testing with mocha in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Eyang, Daniel Eyoh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tediyang/alx-backend-javascript/issues"
+  },
+  "homepage": "https://github.com/Tediyang/alx-backend-javascript#readme",
+  "dependencies": {
+    "sinon": "^15.2.0"
+  }
+}
