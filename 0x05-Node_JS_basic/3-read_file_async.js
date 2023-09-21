@@ -43,11 +43,15 @@ const collateData = (lines) => {
 
 const displayData = (data) => {
   console.log(`Number of students: ${data.allStudents}`);
+  let msg = `Number of students: ${data.allStudents}`;
   for (const field of Object.keys(data.fields)) {
     const n = data.fields[field].count;
     const names = data.fields[field].students.join(', ');
     console.log(`Number of students in ${field}: ${n}. List: ${names}`);
+    msg += `Number of students in ${field}: ${n}. List: ${names}\n`;
   }
+  msg = msg.slice(0, -1);
+  return msg;
 };
 
 const countStudents = (path) => {
@@ -55,8 +59,8 @@ const countStudents = (path) => {
     readCsv(path)
       .then((lines) => {
         const data = collateData(lines);
-        displayData(data);
-        resolve('Done!');
+        const msg = displayData(data);
+        resolve(msg);
       })
       .catch((error) => {
         reject(error);
