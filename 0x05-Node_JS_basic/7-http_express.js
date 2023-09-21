@@ -16,8 +16,7 @@ app.get('/students', async (req, res) => {
       res.send(dbInfo);
     })
     .catch((err) => {
-      dbInfo += err.message;
-      res.send(dbInfo);
+      res.send('Cannot load the database');
     });
 });
 
